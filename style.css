@@ -1,0 +1,94 @@
+body, html {
+    margin: 0px;
+    padding: 0px;
+}
+h1 {
+    font-family: 'Trocchi', serif;
+}
+.h4, h4 {
+    font-family: 'Raleway', sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 5px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+address span {
+    border-bottom: solid 1px rgba(0, 0, 0, 0.3);
+}
+#map {
+    height: 300px;
+}
+a {
+    color: inherit;
+}
+.container-wraper {
+    height: 100%;
+    position: relative;
+    background-image: url("imgs/jura.jpg");
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.nav-link:hover {
+    color: azure;
+}
+@media (max-width: 925px) {
+    #brand h1 {
+        font-size: 4rem;
+    }
+    #brand h4 {
+        font-size: 1rem;
+    }
+    .container {
+        padding: 0;
+    }
+    .container a {
+        font-size: 0.8rem;
+        padding: 8px 12px;
+    }
+}
+@media (max-width: 635px) {
+    #brand h1 {
+        font-size: 3rem;
+    }
+    #brand h4 {
+        font-size: 0.75rem;
+    }
+}
+@media (max-width: 485px) {
+    #brand h1 {
+        font-size: 2rem;
+    }
+    #brand h4 {
+        font-size: 0.5rem;
+    }
+    .lead {
+        font-size: 1rem;
+    }
+}
+.fa-angle-up:hover {
+    color: rgb(35, 38, 43, 0.7);
+    cursor: pointer;
+}
+#topbutton {
+    display: inline-block;
+    text-align: center;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    transition: background-color .3s, 
+      opacity .5s, visibility .5s;
+    opacity: 0;
+    visibility: hidden;
+    z-index: 1000;
+  }
+
+  #topbutton.show {
+    opacity: 1;
+    visibility: visible;
+  }
